@@ -1,0 +1,37 @@
+{
+  "name": "the-internet-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive test automation framework for the-internet demo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:playwright && npm run test:selenium && npm run test:puppeteer",
+    "test:playwright": "playwright test",
+    "test:selenium": "mocha test_scripts/selenium/**/*.js",
+    "test:puppeteer": "mocha test_scripts/puppeteer/**/*.js",
+    "report": "node utils/report-generator.js"
+  },
+  "keywords": [
+    "testing",
+    "automation",
+    "playwright",
+    "selenium",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.41.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "puppeteer": "^21.7.0",
+    "selenium-webdriver": "^4.16.0",
+    "axe-core": "^4.8.2",
+    "lighthouse": "^11.4.0",
+    "mochawesome": "^7.1.3",
+    "visual-regression-testing-framework": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  }
+}
