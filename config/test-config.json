@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://the-internet.herokuapp.com",
+  "testEnvironments": ["local", "ci"],
+  "defaultEnvironment": "local",
+  "browsers": ["chromium", "firefox", "webkit"],
+  "defaultBrowser": "chromium",
+  "headless": true,
+  "defaultTimeout": 30000,
+  "retryCount": 2,
+  "screenshotOnFailure": true,
+  "videoRecording": true,
+  "reportFormat": "html",
+  "parallelTests": 3,
+  "visualThreshold": 0.05,
+  "accessibilityLevel": "WCAG2AA"
+}
